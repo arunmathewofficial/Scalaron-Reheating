@@ -1,0 +1,70 @@
+10/06/2022 02:37:26 AM – [Main:20] – INFO: Operating mode : Default
+10/06/2022 02:37:26 AM – [Main:30] – INFO: Initializing model parameters
+10/06/2022 02:37:26 AM – [Inflation:18] – INFO: Setting up initial attributes for Inflation.
+10/06/2022 02:37:26 AM – [Inflation:27] – INFO: Inflation - Initial Conditions : [1.000000,-0.005667,0.000000].
+10/06/2022 02:37:26 AM – [Inflation:69] – INFO: A termination event occurred. epsilon_1 = 1.
+10/06/2022 02:37:26 AM – [Inflation:70] – INFO: Inflation ends at t_e = 99.372657 t_Planck.
+10/06/2022 02:37:26 AM – [Inflation:93] – INFO: Writting inflation data to file inf_data.
+10/06/2022 02:38:23 AM – [Main:20] – INFO: Operating mode : Default
+10/06/2022 02:38:23 AM – [Main:30] – INFO: Initializing model parameters
+10/06/2022 02:38:23 AM – [Inflation:18] – INFO: Setting up initial attributes for Inflation.
+10/06/2022 02:38:23 AM – [Inflation:27] – INFO: Inflation - Initial Conditions : [1.000000,-0.005667,0.000000].
+10/06/2022 02:38:24 AM – [Inflation:69] – INFO: A termination event occurred. epsilon_1 = 1.
+10/06/2022 02:38:24 AM – [Inflation:70] – INFO: Inflation ends at t_e = 99.372657 t_Planck.
+10/06/2022 02:38:24 AM – [Inflation:93] – INFO: Writting inflation data to file inf_data.
+10/06/2022 02:42:15 AM – [Main:20] – INFO: Operating mode : Default
+10/06/2022 02:42:15 AM – [Main:30] – INFO: Initializing model parameters
+10/06/2022 02:42:15 AM – [Inflation:18] – INFO: Setting up initial attributes for Inflation.
+10/06/2022 02:42:15 AM – [Inflation:27] – INFO: Inflation - Initial Conditions : [1.000000,-0.005667,0.000000].
+10/06/2022 02:42:15 AM – [Inflation:69] – INFO: A termination event occurred. epsilon_1 = 1.
+10/06/2022 02:42:15 AM – [Inflation:70] – INFO: Inflation ends at t_e = 99.372657 t_Planck.
+10/06/2022 02:42:15 AM – [Inflation:93] – INFO: Writting inflation data to file inf_data.
+10/06/2022 02:42:20 AM – [Main:20] – INFO: Operating mode : Default
+10/06/2022 02:42:20 AM – [Main:30] – INFO: Initializing model parameters
+10/06/2022 02:42:20 AM – [Inflation:18] – INFO: Setting up initial attributes for Inflation.
+10/06/2022 02:42:20 AM – [Inflation:27] – INFO: Inflation - Initial Conditions : [1.000000,-0.005667,0.000000].
+10/06/2022 02:42:20 AM – [Inflation:69] – INFO: A termination event occurred. epsilon_1 = 1.
+10/06/2022 02:42:20 AM – [Inflation:70] – INFO: Inflation ends at t_e = 99.372657 t_Planck.
+10/06/2022 02:42:20 AM – [Inflation:93] – INFO: Writting inflation data to file inf_data.
+10/06/2022 02:44:48 AM – [Main:20] – INFO: Operating mode : Default
+10/06/2022 02:44:48 AM – [Main:30] – INFO: Initializing model parameters
+10/06/2022 02:44:48 AM – [Inflation:18] – INFO: Setting up initial attributes for Inflation.
+10/06/2022 02:44:48 AM – [Inflation:27] – INFO: Inflation - Initial Conditions : [1.000000,-0.005667,0.000000].
+10/06/2022 02:44:48 AM – [Inflation:69] – INFO: A termination event occurred. epsilon_1 = 1.
+10/06/2022 02:44:48 AM – [Inflation:70] – INFO: Inflation ends at t_e = 99.372657 t_Planck.
+10/06/2022 02:44:48 AM – [Inflation:93] – INFO: Writting inflation data to file inf_data.
+10/06/2022 02:51:12 AM – [Main:20] – INFO: Operating mode : Default
+10/06/2022 02:51:12 AM – [Main:30] – INFO: Initializing model parameters
+10/06/2022 02:51:12 AM – [Inflation:18] – INFO: Setting up initial attributes for Inflation.
+10/06/2022 02:51:12 AM – [Inflation:27] – INFO: Inflation - Initial Conditions : [1.000000,-0.005667,0.000000].
+10/06/2022 02:51:12 AM – [Inflation:69] – INFO: A termination event occurred. epsilon_1 = 1.
+10/06/2022 02:51:12 AM – [Inflation:70] – INFO: Inflation ends at t_e = 99.372657 t_Planck.
+10/06/2022 02:51:12 AM – [Inflation:93] – INFO: Writting inflation data to file inf_data.
+10/06/2022 02:57:14 AM – [Main:20] – INFO: Operating mode : Default
+10/06/2022 02:57:14 AM – [Main:30] – INFO: Initializing model parameters
+10/06/2022 02:57:14 AM – [Inflation:18] – INFO: Setting up initial attributes for Inflation.
+10/06/2022 02:57:14 AM – [Inflation:27] – INFO: Inflation - Initial Conditions : [1.000000,-0.005667,0.000000].
+10/06/2022 02:57:14 AM – [Inflation:69] – INFO: A termination event occurred. epsilon_1 = 1.
+10/06/2022 02:57:14 AM – [Inflation:70] – INFO: Inflation ends at t_e = 99.372657 t_Planck.
+10/06/2022 02:57:14 AM – [Inflation:93] – INFO: Writting inflation data to file inf_data.
+10/06/2022 02:59:34 AM – [Main:20] – INFO: Operating mode : Default
+10/06/2022 02:59:34 AM – [Main:30] – INFO: Initializing model parameters
+10/06/2022 02:59:34 AM – [Inflation:18] – INFO: Setting up initial attributes for Inflation.
+10/06/2022 02:59:34 AM – [Inflation:27] – INFO: Inflation - Initial Conditions : [1.000000,-0.005667,0.000000].
+10/06/2022 02:59:34 AM – [Inflation:69] – INFO: A termination event occurred. epsilon_1 = 1.
+10/06/2022 02:59:34 AM – [Inflation:70] – INFO: Inflation ends at t_e = 99.372657 t_Planck.
+10/06/2022 02:59:34 AM – [Inflation:93] – INFO: Writting inflation data to file inf_data.
+10/06/2022 03:00:30 AM – [Main:20] – INFO: Operating mode : Default
+10/06/2022 03:00:30 AM – [Main:30] – INFO: Initializing model parameters
+10/06/2022 03:00:30 AM – [Inflation:18] – INFO: Setting up initial attributes for Inflation.
+10/06/2022 03:00:30 AM – [Inflation:27] – INFO: Inflation - Initial Conditions : [1.000000,-0.005667,0.000000].
+10/06/2022 03:00:30 AM – [Inflation:69] – INFO: A termination event occurred. epsilon_1 = 1.
+10/06/2022 03:00:30 AM – [Inflation:70] – INFO: Inflation ends at t_e = 99.372657 t_Planck.
+10/06/2022 03:00:30 AM – [Inflation:93] – INFO: Writting inflation data to file inf_data.
+10/06/2022 03:03:16 AM – [Main:20] – INFO: Operating mode : Default
+10/06/2022 03:03:16 AM – [Main:30] – INFO: Initializing model parameters
+10/06/2022 03:03:16 AM – [Inflation:18] – INFO: Setting up initial attributes for Inflation.
+10/06/2022 03:03:16 AM – [Inflation:27] – INFO: Inflation - Initial Conditions : [1.000000,-0.005667,0.000000].
+10/06/2022 03:03:16 AM – [Inflation:69] – INFO: A termination event occurred. epsilon_1 = 1.
+10/06/2022 03:03:16 AM – [Inflation:70] – INFO: Inflation ends at t_e = 99.372657 t_Planck.
+10/06/2022 03:03:16 AM – [Inflation:93] – INFO: Writting inflation data to file inf_data.
