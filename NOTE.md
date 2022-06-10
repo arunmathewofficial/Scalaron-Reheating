@@ -3,7 +3,7 @@ Project Title: Reheating by Scalaron Decay <br/>
 Author: Arun Mathew 
  
 
--------------------------------------------------------------------------------------
+--------------------------------------------------------------------
 ### Sphinx document creator terminal command
 ref: https://rest-sphinx-memo.readthedocs.io/en/latest/ReST.html
 > Make docs directory, then
@@ -34,7 +34,7 @@ ref: https://rest-sphinx-memo.readthedocs.io/en/latest/ReST.html
 For reference, see:  https://www.youtube.com/watch?v=5s3JvVqwESA
 
 
--------------------------------------------------------------------------------------
+-----------------------------------------------------------------------
 ### Region of Inflation
 ODE Solver Used: solve_ivp from scipy.integrate.
 
