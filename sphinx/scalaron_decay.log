@@ -1,0 +1,7 @@
+10/06/2022 04:09:15 PM – [Main:20] – INFO: Operating mode : Default
+10/06/2022 04:09:15 PM – [Main:30] – INFO: Initializing model parameters
+10/06/2022 04:09:15 PM – [Inflation:18] – INFO: Setting up initial attributes for Inflation.
+10/06/2022 04:09:15 PM – [Inflation:27] – INFO: Inflation - Initial Conditions : [1.000000,-0.005667,0.000000].
+10/06/2022 04:09:15 PM – [Inflation:69] – INFO: A termination event occurred. epsilon_1 = 1.
+10/06/2022 04:09:15 PM – [Inflation:70] – INFO: Inflation ends at t_e = 99.372657 t_Planck.
+10/06/2022 04:09:15 PM – [Inflation:93] – INFO: Writting inflation data to file inf_data.
