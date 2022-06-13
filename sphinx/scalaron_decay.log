@@ -186,3 +186,12 @@
 13/06/2022 12:41:22 AM – [Inflation:115] – INFO: Writting inflation data to file inf_data.
 13/06/2022 12:41:22 AM – [Reheating:18] – INFO: Setting up initial attributes for Reheating.
 13/06/2022 12:41:22 AM – [Reheating:22] – INFO: Reheating - Initial Conditions : [99.372657,0.102169,-0.010475,0.000004].
+13/06/2022 02:28:13 AM – [Main:20] – INFO: Operating mode : Default
+13/06/2022 02:28:13 AM – [Main:30] – INFO: Initializing model parameters
+13/06/2022 02:28:13 AM – [Inflation:18] – INFO: Setting up initial attributes for Inflation.
+13/06/2022 02:28:13 AM – [Inflation:27] – INFO: Inflation - Initial Conditions : [1.000000,-0.005667,0.000000].
+13/06/2022 02:28:13 AM – [Inflation:91] – INFO: A termination event occurred. epsilon_1 = 1.
+13/06/2022 02:28:13 AM – [Inflation:92] – INFO: Inflation ends at t_e = 99.372657 t_Planck.
+13/06/2022 02:28:13 AM – [Inflation:115] – INFO: Writting inflation data to file inf_data.
+13/06/2022 02:28:22 AM – [Reheating:18] – INFO: Setting up initial attributes for Reheating.
+13/06/2022 02:28:22 AM – [Reheating:22] – INFO: Reheating - Initial Conditions : [99.372657,0.102169,-0.010475,0.000004].

@@ -1,5 +1,5 @@
-inflation module
-================
+Inflation
+=========
 
 .. automodule:: inflation
    :members:

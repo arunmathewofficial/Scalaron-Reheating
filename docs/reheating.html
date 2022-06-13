@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reheating module &mdash; Reheating by Scalaron Decay 1.0.0 documentation</title>
+  <title>Reheating &mdash; Reheating by Scalaron Decay 1.0.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -16,11 +16,12 @@
         <script src="_static/underscore.js"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="logger module" href="logger.html" />
-    <link rel="prev" title="inflation module" href="inflation.html" /> 
+    <link rel="next" title="Logger" href="logger.html" />
+    <link rel="prev" title="Inflation" href="inflation.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -38,17 +39,19 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Introduction:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Informations</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="info.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="info.html#author">Author</a></li>
+<li class="toctree-l1"><a class="reference internal" href="info.html#licence">Licence</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Code Documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">Source Code</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="main.html">main module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fieldeqs.html">fieldeqs module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inflation.html">inflation module</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">reheating module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html">Main</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fieldeqs.html">Field Equations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inflation.html">Inflation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Reheating</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="modules.html#tools">Tools</a></li>
@@ -69,7 +72,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="modules.html">Source Code</a> &raquo;</li>
-      <li>reheating module</li>
+      <li>Reheating</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/reheating.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -80,11 +83,100 @@
            <div itemprop="articleBody">
              
   <section id="module-reheating">
-<span id="reheating-module"></span><h1>reheating module<a class="headerlink" href="#module-reheating" title="Permalink to this heading"></a></h1>
+<span id="reheating"></span><h1>Reheating<a class="headerlink" href="#module-reheating" title="Permalink to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="reheating.reheating">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">reheating.</span></span><span class="sig-name descname"><span class="pre">reheating</span></span><a class="headerlink" href="#reheating.reheating" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">reheating.</span></span><span class="sig-name descname"><span class="pre">reheating</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">REH_IC</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reheating.reheating" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>sda</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="reheating.reheating.reheating_solver">
+<span class="sig-name descname"><span class="pre">reheating_solver</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#reheating.reheating.reheating_solver" title="Permalink to this definition"></a></dt>
+<dd><p>Solve inflation field equations for the region of inflation</p>
+<p>The docstring in the function should fully explain what the function is
+for and how to use it</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>this is a bullet list</p></li>
+<li><p>with multiple entries and some text in <em>italic</em> and even <strong>bold</strong>.
+The bullet list items can span multiple lines which are indented</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>bullet (as well as enumerated) lists have to start and end
+with an empty line</p>
+</div>
+<ol class="arabic simple">
+<li><p>Single backquotes are for <strong>references</strong> to other documented items.
+For example <cite>basf2.Module</cite> will link to the documentation of the class
+Module in the python module basf2. A different link name and link
+target can be specified with &lt;&gt;: <cite>Module class &lt;basf2.Module&gt;</cite> will
+link to basf2.Module but the link will read “Module class”</p></li>
+<li><p>Double backquotes are for <code class="docutils literal notranslate"><span class="pre">literal</span> <span class="pre">text</span></code>.</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>this is different to markdown where single backquotes are
+usually used for literal text</p>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Links to external websites are usually of the form <a class="reference external" href="http://example.com">Link Text</a>.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>there is an underscore at the end of links</p>
+</div>
+<ol class="arabic" start="4">
+<li><p>math is supported either inline <span class="math notranslate nohighlight">\(f(x) = \sum_{x=i}^N x^i\)</span> or as
+display verssion:</p>
+<div class="math notranslate nohighlight">
+\[f(x) = \sum_{i=1}^N x^i\]</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference external" href="http://www.sphinx-doc.org/en/stable/ext/math.html">Math support in Sphinx</a></p>
+</div>
+</li>
+<li><p>The easiest way for code example is the “doctest” syntax: Start a new
+paragaph after an empty line with <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;</span></code> followed by the python
+statements and (optionally) the expected output of these statements.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dummy_function_example</span><span class="p">(</span><span class="s2">&quot;some name&quot;</span><span class="p">,</span> <span class="n">foo</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">)</span>
+<span class="go">&quot;Hello some name, Lord of bar&quot;</span>
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference external" href="http://www.sphinx-doc.org/en/stable/markup/code.html">Showing code examples</a></p>
+</div>
+</li>
+<li><p>To document parameters and return types please use the <span class="xref std std-ref">googlestyle</span> as shown below:</p></li>
+</ol>
+<dl>
+<dt>Note:</dt><dd><p>For class members please do not include the <code class="docutils literal notranslate"><span class="pre">self</span></code> parameter in this list</p>
+</dd>
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>name (str): Description of the first parameter</dt><dd><p>Can also span multiple lines if indented properly</p>
+</dd>
+</dl>
+<p>foo: Second parameter but no type given</p>
+</dd>
+<dt>Returns:</dt><dd><p>inf_tspan (1D array): time span of inflation in the unit of t_Planck</p>
+<p>Xi,
+Psi,
+The,
+Ricci,
+Epsilon_1,
+Epsilon_3,
+Epsilon_4,
+n_s,
+r,
+Status_flag</p>
+</dd>
+<dt>See Also:</dt><dd><p>Some references to other functions</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -93,8 +185,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="inflation.html" class="btn btn-neutral float-left" title="inflation module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="logger.html" class="btn btn-neutral float-right" title="logger module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="inflation.html" class="btn btn-neutral float-left" title="Inflation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="logger.html" class="btn btn-neutral float-right" title="Logger" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
