@@ -24,14 +24,19 @@ The docs include the documentation html files for the github pages.
 ### Documentation
 
 For more detailed see the code documentation at 
+
 https://arun-mathew-github.github.io/Scalaron_Reheating/
+
 -------------------------------------------------------------------------------------
 
 ### Developer
 
 Dr. Arun Mathew, New Numerical Lab, Dept. of Physics, IIT Guwahati, India - 781039
+
 ------------------------------------------------------------------------------------
 
 ### License
+
 [MIT](https://choosealicense.com/licenses/mit/)
+
 -------------------------------------------------------------------------------------
