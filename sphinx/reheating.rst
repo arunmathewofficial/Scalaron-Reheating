@@ -1,5 +1,5 @@
-reheating module
-================
+Reheating
+=========
 
 .. automodule:: reheating
    :members:

@@ -40,8 +40,13 @@ if(Setting == 'Default'):
     INF = inflation(f_R_gravity,  # Inherit the class model using object f_R_gravity
                     "inf_data"  # Output file name
                     )
-    # Solve inflation field equations and return end values
-    INF.inflation_solver()
+    # Solve inflation field equations and return
+    INF_Register = INF.inflation_solver()
+
+    INF_EndTime = INF_Register[0][-1]
+    INF_EndXi = INF_Register[1][-1]
+    INF_EndPsi = INF_Register[2][-1]
+    INF_EndThe = INF_Register[3][-1]
 
 
 #####################################################################################
@@ -102,6 +107,18 @@ if(Setting == 'Parameter space Sketch'):
 #####################################################################################
 if(Setting == 'Default'):
     # Region :Reheating
-    REH = reheating()
+
+    REH_IC = [INF_EndTime,
+              INF_EndXi,
+              INF_EndPsi,
+              INF_EndThe
+              ]
+    REH = reheating(f_R_gravity,
+                    REH_IC,
+                    "reh_data"
+                    )
+
+    # Solve reheating field equations and return
+    REH_Register = REH.reheating_solver()
 
 

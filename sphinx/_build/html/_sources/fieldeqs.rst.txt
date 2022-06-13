@@ -1,4 +1,4 @@
-fieldeqs module
+Field Equations
 ===============
 
 .. automodule:: fieldeqs

@@ -1,5 +1,5 @@
-plotter module
-==============
+Plotter
+=======
 
 .. automodule:: plotter
    :members:

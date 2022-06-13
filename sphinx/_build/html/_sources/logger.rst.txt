@@ -1,5 +1,5 @@
-logger module
-=============
+Logger
+======
 
 .. automodule:: logger
    :members:

@@ -3,7 +3,7 @@
 from scipy.integrate import solve_ivp
 from fieldeqs import *
 from tools import logger
-import matplotlib.pyplot as plt
+from tools import plotter
 import numpy
 import os
 
@@ -47,6 +47,28 @@ class inflation():
 
     #####################################################################################
     def inflation_solver(self):
+        """
+        Solve inflation field equations for the region of inflation
+
+        Returns:
+          inf_tspan (1D array): time span of inflation in the unit of t_Planck
+
+          Xi,
+          Psi,
+          The,
+          Ricci,
+          Epsilon_1,
+          Epsilon_3,
+          Epsilon_4,
+          n_s,
+          r,
+          Status_flag
+
+        See Also:
+          Some references to other functions
+
+        """
+
         t_points  = self.tvector
         IC = self.IC
         tspan = self.tspan
@@ -112,31 +134,11 @@ class inflation():
                 print("n_s = ", "{0:.4f}".format(n_s), file=inf_file)
                 print("r   = ", "{0:.4f}".format(r), file=inf_file)
 
-         # plot the results
-        fig, ax = plt.subplots(figsize=(4.5, 3), dpi=100)
-        ax.plot(inf_tspan, Epsilon_1, label='$\epsilon_1$')
-        ax.plot(inf_tspan, Epsilon_3, label='$\epsilon_3$')
-        # plt.xlim([0, 10])
-        plt.xlim([0, inf_tspan[-1]])
-        # plt.ylim([-0.01, 1])
-        ax.plot(inf_tspan, Epsilon_4, '--', label='$\epsilon_4$')
-        # ax.plot(t, Theta, label='Theta')
-        plt.xlabel('t')
-        plt.legend()
-        plt.tight_layout()
-        plt.savefig('Slow-roll_parameters.png')
-        plt.show()
+                plotter.plot_single(inf_tspan, Xi, [0, 100], [0, 1], '$t/t_P$', '$H(t)/H_0$', 'inf_H', 'png')
+                plotter.plot_single(inf_tspan, Psi, [0, 100], [0, -0.02], '$t/t_P$', '$\dot{H}(t)$', 'inf_Hdot', 'png')
+                plotter.plot_single(inf_tspan, The, [0, 100], [0, 0.000006], '$t/t_P$', '$\\rho/\epsilon^4$', 'inf_rho', 'png')
 
         return inf_tspan, Xi, Psi, The, Ricci, Epsilon_1, Epsilon_3, Epsilon_4, n_s, r, Status_flag
-
-
-
-
-
-
-
-
-        # must retun the final values
 
         #####################################################################################
         #####################################################################################
