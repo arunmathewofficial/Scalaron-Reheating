@@ -1,0 +1,8 @@
+Project Title: Reheating by Scalaron Decay
+File Type: Data 
+Author: Arun Mathew
+Affiliation: Dept. of Physics, IIT Guwahati, India
+
+Data: Parameter Space with varying beta
+
+alpha, beta, mu, n_s, r

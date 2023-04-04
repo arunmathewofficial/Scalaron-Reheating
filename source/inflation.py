@@ -70,6 +70,7 @@ class inflation():
         """
 
         t_points  = self.tvector
+        print(t_points)
         IC = self.IC
         tspan = self.tspan
 
