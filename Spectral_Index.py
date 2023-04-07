@@ -4,6 +4,9 @@
 import numpy as np
 from scipy.integrate import solve_ivp
 import math
+import matplotlib.pyplot as plt
+from matplotlib.ticker import (MultipleLocator, AutoMinorLocator)
+import pandas as pd
 
 # define spectral index ns and r
 def spectral_index(e1, e3, e4):
@@ -32,9 +35,9 @@ r_array = []
 H0_array = []
 
 
-for i in range(1, 100, 1):
+for i in range(1, 200, 1):
     # for loop will generate the value of the parameter beta
-    beta = (1 + i/10) * 1e+07
+    beta = (1 + i/20) * 1e+07
 
     #print('beta = ', '{:.5e}'.format(beta))
     HS = 1 / math.sqrt(12 * beta)
@@ -106,17 +109,47 @@ for i in range(1, 100, 1):
     ns_array.append(ns)
     r_array.append(r)
 
+# save data to file ======================================
+dict = {}
+dict['beta'] = beta_array
+dict['H0'] = H0_array
+dict['n_s'] = ns_array
+dict['r'] = r_array
+df = pd.DataFrame(dict)
+data_file = 'Spectral_Index.txt'
+print('Writing data to file', data_file)
+df.to_csv(data_file, sep=' ', index=False, float_format='%.8e')
+with open(data_file, 'r+') as file:
+    contents = file.read()
+    file.seek(0, 0)
+    file.write('# Spectral index as function of parameter beta \n')
+    file.write('# with alpha = {:.8e}'.format(alpha) + ' $t_p^2$\n\n'+contents)
 
-# plot the solution
-import matplotlib.pyplot as plt
-#plt.plot(sol.t, sol.y[0])
-plt.plot(beta_array, r_array, label='ns')
-plt.xlabel('beta')
-plt.ylabel('n_s')
-plt.legend()
-plt.show()
+# Plotter ===================================================
+fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(8,3), sharex=False, sharey=False)
+
+ax[0].plot(beta_array, ns_array, label='n_s',linestyle='-', color='black', linewidth=0.75)
+ax[0].plot([-1e+7, 4.55e+07, 4.55e+07], [0.9649, 0.9649, 0], label='r', linestyle='--', color='crimson', linewidth=0.75)
+ax[0].xaxis.set_minor_locator(AutoMinorLocator())
+ax[0].yaxis.set_minor_locator(AutoMinorLocator())
+ax[0].tick_params(axis="both", direction="in", which="both",
+                          bottom=True, top=True, left=True, right=True, length=3)
+ax[0].set_xlim([0, 1.2e+8])
+ax[0].set_ylim([0.9, 1.0])
+ax[0].set_xlabel(r'$\rm \beta (t_p^2)$', fontsize=12)
+ax[0].set_ylabel(r'$\rm n_s$', fontsize=14)
 
 
+ax[1].plot(beta_array, r_array, label='r', linestyle='-', color='black', linewidth=0.75)
+ax[1].plot([4.55e+07, 4.55e+07, 0], [-0.0002, 5.13280270e-04, 5.13280270e-04], label='r', linestyle='--', color='crimson', linewidth=0.75)
+ax[1].xaxis.set_minor_locator(AutoMinorLocator())
+ax[1].yaxis.set_minor_locator(AutoMinorLocator())
+ax[1].tick_params(axis="both", direction="in", which="both",
+                          bottom=True, top=True, left=True, right=True, length=3)
+ax[1].set_ylim([-0.0002, 0.0025])
+ax[1].set_xlim([0, 1.2e+8])
+ax[1].set_xlabel(r'$\rm \beta (t_p^2)$', fontsize=12)
+ax[1].set_ylabel(r'$\rm r$', fontsize=14)
 
-
-
+plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=0.3, hspace=None)
+plt.savefig('Spectral_Index.png', bbox_inches='tight', dpi=300)
