@@ -33,6 +33,7 @@ ns_array = []
 beta_array = []
 r_array = []
 H0_array = []
+inf_end_array = []
 
 
 for i in range(1, 400, 1):
@@ -103,18 +104,21 @@ for i in range(1, 400, 1):
     epsilon_4 = d2F_dt2 / (sol.y[0] * dF_dt)
     #print('epsilon_4 =', '{:.5e}'.format(epsilon_4[0]))
 
+    t_inf = inf_span[-1]
     ns, r = spectral_index(epsilon_1[0], epsilon_3[0], epsilon_4[0])
 
-    print('For beta = ', '{:.5e},'.format(beta), 't_inf = ', '{:.5e},'.format(inf_span[-1]), 'H0 = ', '{:.5e},'.format(H0), 'ns = ', '{:.5e},'.format(ns), 'r = ', '{:.5e}'.format(r))
+    print('For beta = ', '{:.5e},'.format(beta), 't_inf = ', '{:.5e},'.format(t_inf), 'H0 = ', '{:.5e},'.format(H0), 'ns = ', '{:.5e},'.format(ns), 'r = ', '{:.5e}'.format(r))
 
     beta_array.append(beta)
     H0_array.append(H0)
+    inf_end_array.append(t_inf)
     ns_array.append(ns)
     r_array.append(r)
 
 # save data to file ======================================
 dict = {}
 dict['beta'] = beta_array
+dict['t_inf'] = inf_end_array
 dict['H0'] = H0_array
 dict['n_s'] = ns_array
 dict['r'] = r_array
